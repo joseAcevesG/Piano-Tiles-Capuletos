@@ -1,5 +1,9 @@
+from game.pygame import Game
+
+
 def main():
-    print("Hello capuletos :)")
+    game = Game()
+    game.run()
 
 
 if __name__ == "__main__":

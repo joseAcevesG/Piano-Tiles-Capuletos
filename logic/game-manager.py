@@ -49,7 +49,7 @@ class GameManager:
         for row in range(6):
             for note in self.notes[row]:
                 if note:
-                    note.move(self.speed)
+                    note.move()
 
     def check_hit(self, mouse_pos: int) -> bool:
         """Verifica si el clic en la posición 'mouse_pos' coincide con la nota en la fila inferior."""

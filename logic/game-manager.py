@@ -89,8 +89,9 @@ class GameManager:
         print(f"Score: {self.score}")
 
 
-# Ejemplo de uso:
-gm = GameManager(
-    screen_width=800, screen_height=600, speed=1
-)  # 1 segundo entre actualizaciones
-gm.run()  # Inicia el ciclo del juego
+if __name__ == "__main__":
+    # Ejemplo de uso:
+    gm = GameManager(
+        screen_width=800, screen_height=600, speed=1
+    )  # 1 segundo entre actualizaciones
+    gm.run()  # Inicia el ciclo del juego

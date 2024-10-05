@@ -12,7 +12,12 @@ class NoteFactory:
         y = 0
         
         # Crear una instancia de Note
-        note_rect = (x, y, note_width, note_height)
+        note_rect = {
+            'x': x, 
+            'y': y, 
+            'width': note_width, 
+            'height': note_height
+        }
         note_color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
         return Note(note_rect, note_color)

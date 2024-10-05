@@ -42,14 +42,13 @@ class GameManager:
         for row in range(5, 0, -1):  # Desde la penúltima fila a la primera
             self.notes[row] = self.notes[row - 1]
 
-        # Crea una nueva nota en la fila de hasta arriba
-        self.create_note()
-
         # Mover todas las notas
         for row in range(6):
             for note in self.notes[row]:
                 if note:
                     note.move()
+        # Crea una nueva nota en la fila de hasta arriba
+        self.create_note()
 
     def check_hit(self, mouse_pos: int) -> bool:
         """Verifica si el clic en la posición 'mouse_pos' coincide con la nota en la fila inferior."""

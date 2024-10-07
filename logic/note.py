@@ -23,7 +23,7 @@ class Note:
         Mueve la nota hacia abajo según la velocidad especificada.
         :param speed: int, velocidad con la que la nota se mueve hacia abajo.
         """
-        self.rect.y += speed  # Mueve la nota hacia abajo en la pantalla
+        self.rect.y += self.rect.y  # Mueve la nota hacia abajo en la pantalla
 
 
 # Ejemplo de uso:
